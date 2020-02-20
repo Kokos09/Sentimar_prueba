@@ -1,122 +1,476 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-        <link rel="stylesheet" href="assets/css/style.css">
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-        crossorigin="anonymous"></script>
-        <script src="https://kit.fontawesome.com/4a2e81866c.js" crossorigin="anonymous"></script>
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="img/favicon/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+<link rel="manifest" href="img/favicon/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="img/favicon/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+  <title>SentiMar</title>
+  <!-- MDB icon -->
+  <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+  <!-- Google Fonts Roboto -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- Material Design Bootstrap -->
+  <link rel="stylesheet" href="css/mdb.min.css">
+  <!-- Your custom styles (optional) -->
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark" style="padding: 2rem 1rem">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="navbar-collapse collapse w-100 order-3 dual-collapse2" style="position: relative;left: 550px;bottom:35px;" >
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">sales@sentimar.com +52 (55) 5669 2357
-                        <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">
-                        <i class="fab fa-twitter-square"></i>
-                        <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">
-                        <i class="fab fa-facebook-square"></i>
-                        <span class="sr-only">(current)</span></a>
-                </li>
-            </ul>
-        </div>
-        <div class="navbar-collapse collapse w-100 order-3 dual-collapse2" style="position: relative;top:25px;">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">INICIO <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">NOSOTROS <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">ILUMINACIÓN <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">ENERGIA SOLAR <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">PENDING <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">NUESTRO TRABAJO <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">CONTACTO <span class="sr-only">(current)</span></a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-    <div class="container" style="position: relative;top: 150px;">
-        <div class="row">
-            <div class="col-md-4 col-xs-12">
-                <img src="https://d1icd6shlvmxi6.cloudfront.net/gsc/X3PGP5/95/5a/07/955a07bcc2e54713874003c0337e7f41/images/index/u4.jpg?token=f46463b3b05f4464e37302bf54ace907bfaaf3e439892e59c875d161616f45da"
-                    class="rounded" alt="..." style="width: 400px; height:251px;">
-            </div>
-            <div class="col-md-4 col-xs-12">
-                <img src="https://d1icd6shlvmxi6.cloudfront.net/gsc/X3PGP5/95/5a/07/955a07bcc2e54713874003c0337e7f41/images/index/u5.jpg?token=1ec23d8cf33ba589d3a11b268f14167ed5eda08e325065431383b5728e6b8cbb"
-                    alt="..." class="rounded" style="width: 400px; height:251px;">
-            </div>
-            <div class="col-md-4 col-xs-12">
-                <img src="https://d1icd6shlvmxi6.cloudfront.net/gsc/X3PGP5/95/5a/07/955a07bcc2e54713874003c0337e7f41/images/index/u3.jpg?token=e728eb0b2de29af31872081337ea7bdea263f22df0fa2e47255d3152ab0d6e56"
-                    alt="..." class="rounded" style="width: 400px; height:251px;">                                                                            
-            </div>
+
+<!--Navbar-->
+<nav class="navbar navbar-expand-lg navbar-dark elegant-color fixed-top"  >
+    <!-- Navbar brand -->
+    <!-- Just an image -->
+    <a class="navbar-brand" href="#">
+      <img src="img\PAG PRINCIPAL\sentimar.png" height="50" alt="mdb logo">
+    </a>
+  
+    <!-- Collapse button -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
+      aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="basicExampleNav">
+      <!-- Links -->
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+            <a class="nav-link" href="#">sales@sentimar.com +52 (55) 5669 2357</a>
+        </li>
+        <li class="nav-item" ><a class="nav-link" href="#">
+            <i class="fab fa-twitter-square"></i></a>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="#" >
+            <i class="fab fa-facebook-square"></i></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">INICIO</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">NOSOTROS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">ILUMINACIÓN</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">ENERGIA SOLAR</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">PENDING</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">NUESTRO TRABAJO</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">CONTACTO</a>
+          </li>
+      </ul>
+    </div>
+    <!-- Collapsible content -->
+</nav>
+  <!--/.Navbar-->
+  
+  <!-- Grid row -->
+<div class="row align-items-center" style="padding-top: 150px;" >
+    <!-- Grid column -->
+    <div class="col-lg-4 col-md-12 mb-3 view" style="padding-right: 0px;
+    padding-left: 0px;">
+      <img src="img\index\u5.jpg" class="img-fluid z-depth-1"
+        alt="Responsive image" style=" width:100%;height: 350px;">
+        <div class="mask flex-center">
+            <p class="white-text ">ENERGIA SOLAR</p>
         </div>
     </div>
-    <div class="container" style="position: relative;top: 150px;">
-        <div class="row">
-            <div class="col-md-4 col-xs-12">
-                <img src="https://d1icd6shlvmxi6.cloudfront.net/gsc/X3PGP5/95/5a/07/955a07bcc2e54713874003c0337e7f41/images/index/u4.jpg?token=f46463b3b05f4464e37302bf54ace907bfaaf3e439892e59c875d161616f45da"
-                    class="rounded" alt="..." style="width: 400px; height:251px;">
-            </div>
-            <div class="col-md-4 col-xs-12">
-                <img src="https://d1icd6shlvmxi6.cloudfront.net/gsc/X3PGP5/95/5a/07/955a07bcc2e54713874003c0337e7f41/images/index/u5.jpg?token=1ec23d8cf33ba589d3a11b268f14167ed5eda08e325065431383b5728e6b8cbb"
-                    alt="..." class="rounded" style="width: 400px; height:251px;">
-            </div>
-            <div class="col-md-4 col-xs-12">
-                <img src="https://d1icd6shlvmxi6.cloudfront.net/gsc/X3PGP5/95/5a/07/955a07bcc2e54713874003c0337e7f41/images/index/u3.jpg?token=e728eb0b2de29af31872081337ea7bdea263f22df0fa2e47255d3152ab0d6e56"
-                    alt="..." class="rounded" style="width: 400px; height:251px;">
-            </div>
+    <!-- Grid column -->
+  
+    <!-- Grid column -->
+    <div class="col-lg-4 col-md-6 mb-3 view" style="padding-right: 0px;
+    padding-left: 0px;">
+  
+      <img src="img\index\u4.jpg" class="img-fluid z-depth-1"
+        alt="Responsive image" style=" width:100%;height: 350px;">
+        <div class="mask flex-center">
+            <p class="white-text ">ILUMINACION</p>
         </div>
+  
     </div>
-    <div class="container" style="position: relative;top: 150px;">
-        <div class="row">
-            <div class="col-md-4 col-xs-12">
-                <img src="https://d1icd6shlvmxi6.cloudfront.net/gsc/X3PGP5/95/5a/07/955a07bcc2e54713874003c0337e7f41/images/index/u4.jpg?token=f46463b3b05f4464e37302bf54ace907bfaaf3e439892e59c875d161616f45da"
-                    class="rounded" alt="..." style="width: 400px; height:251px;">
-            </div>
-            <div class="col-md-4 col-xs-12">
-                <img src="https://d1icd6shlvmxi6.cloudfront.net/gsc/X3PGP5/95/5a/07/955a07bcc2e54713874003c0337e7f41/images/index/u5.jpg?token=1ec23d8cf33ba589d3a11b268f14167ed5eda08e325065431383b5728e6b8cbb"
-                    alt="..." class="rounded" style="width: 400px; height:251px;">
-            </div>
-            <div class="col-md-4 col-xs-12">
-                <img src="https://d1icd6shlvmxi6.cloudfront.net/gsc/X3PGP5/95/5a/07/955a07bcc2e54713874003c0337e7f41/images/index/u3.jpg?token=e728eb0b2de29af31872081337ea7bdea263f22df0fa2e47255d3152ab0d6e56"
-                    alt="..." class="rounded" style="width: 400px; height:251px;">
-            </div>
+    <!-- Grid column -->
+  
+    <!-- Grid column -->
+    <div class="col-lg-4 col-md-6 mb-3 view" style="padding-right: 0px;
+    padding-left: 0px;" >
+  
+      <img src="img\index\u3.jpg" class="img-fluid z-depth-1"
+        alt="Responsive image" style=" width:100%;height: 350px;">
+         <div class="mask flex-center">
+            <p class="white-text ">ENERGIA SOLAR</p>
         </div>
+  
     </div>
-<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-    crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-    crossorigin="anonymous"></script>
+    <!-- Grid column -->
+  </div>
+  <div class="text-center white-text" style="padding-top: 35px;" >
+    <h3>Nuestro trabajo y experiencia nos respaldan</h3>
+  </div>
+
+  <!-- Grid row -->
+  <div class="view" style="padding-top: 50px;">
+    <img src="img\index\u10.jpg" class="img-fluid" alt="Responsive image"style=" width:100%;height: 400px;">
+    <div class="mask flex-center">
+        <div class="text-center">
+            <!--Title-->
+            <h4 class="white-text">QUIENES SOMOS</h4>
+            <!--Text-->
+            <p class=" white-text">SentiMar se ha especializado en ofrecer soluciones y productos de iluminación LED incluyendo sistemas de iluminación industriales, áreas deportivas, universidades, vialidades, entre otras. Nos caracterizamos por ofrecer calidad en productos y servicios basándonos en cumplir las necesidades del cliente.</p>
+          </div>
+    
+        </div>
+    </div>  
+</div>
+<div class="container">
+    <div class="row">
+      <div class="col-12 col-sm-6 col-lg-8"><img src="img\index\u10.jpg" class="img-fluid" alt="Responsive image"></div>
+      <div class="col-6 col-lg-4"><img src="img\index\u10.jpg" class="img-fluid" alt="Responsive image"></div>
+    </div>
+    <div class="row">
+        <div class="col-6 col-lg-4"><img src="img\index\u10.jpg" class="img-fluid" alt="Responsive image"></div>
+    </div>
+  </div>
+  <div class="text-center white-text" style="padding-top: 35px;">
+    <h3>NUESTRO TRABAJO</h3>
+    <p class=" white-text">Nuestro trabajo y experiencia nos respaldan</p>
+  </div>
+
+<div class="">
+  <!-- Grid row -->
+  <div class="row">
+  
+    <!-- Grid column -->
+    <div class="col-lg-4 col-md-12 mb-3">
+  
+      <img src="img\index\u32.jpg" class="img-fluid z-depth-1"
+        alt="Responsive image" style=" width:100%;height: 350px;">
+        <div class="text-center pt-4">
+          <!--Title-->
+          <h4 class="white-text">PLAZA PARK</h4>
+          <!--Text-->
+          <p class=" white-text">Miguel Hidalgo, CDMX</p>
+        </div>
+  
+    </div>
+    <!-- Grid column -->
+  
+    <!-- Grid column -->
+    <div class="col-lg-4 col-md-6 mb-3">
+  
+      <img src="img\index\u33.jpg" class="img-fluid z-depth-1"
+        alt="Responsive image" style=" width:100%;height: 350px;">
+        <div class="text-center pt-4">
+          <!--Title-->
+          <h4 class="white-text">PUENTE NEGRO</h4>
+          <!--Text-->
+          <p class=" white-text">Alvarado, Veracruz</p>
+        </div>
+  
+  
+    </div>
+    <!-- Grid column -->
+  
+    <!-- Grid column -->
+    <div class="col-lg-4 col-md-6 mb-3">
+  
+      <img src="img\index\u34.jpg" class="img-fluid z-depth-1"
+        alt="Responsive image" style=" width:100%;height: 350px;">
+        <div class="text-center pt-4">
+          <!--Title-->
+          <h4 class="white-text">ESTADIO PUEBLA</h4>
+          <!--Text-->
+          <p class=" white-text">Puebla, Puebla</p>
+        </div>
+  
+  
+    </div>
+    <!-- Grid column -->
+  </div>
+  <!-- Grid row -->
+</div>
+<div class="d-flex justify-content-around">
+  <!-- Grid row -->
+  <div class="row">
+
+    <!-- Grid column -->
+    <div class="col-lg-4 col-md-12 mb-3">
+
+      <img src="img\index\u35.jpg" class="img-fluid z-depth-1"
+        alt="Responsive image" style=" width:100%;height: 350px;">
+        <div class="text-center pt-4">
+          <!--Title-->
+          <h4 class="white-text">PLAZA INN</h4>
+          <!--Text-->
+          <p class=" white-text">Acapulco, Guerrero</p>
+        </div>
+
+    </div>
+    <!-- Grid column -->
+
+    <!-- Grid column -->
+    <div class="col-lg-4 col-md-6 mb-3">
+
+      <img src="img\index\u37.jpg" class="img-fluid z-depth-1"
+        alt="Responsive image" style=" width:100%;height: 350px;">
+        <div class="text-center pt-4">
+          <!--Title-->
+          <h4 class="white-text">CONTINENTAL MARRIOT</h4>
+          <!--Text-->
+          <p class=" white-text">Caracas, Venezuela</p>
+        </div>
+
+    </div>
+    <!-- Grid column -->
+
+    <!-- Grid column -->
+    <div class="col-lg-4 col-md-6 mb-3">
+
+      <img src="img\index\u38.jpg" class="img-fluid z-depth-1"
+        alt="Responsive image" style=" width:100%;height: 350px;">
+        <div class="text-center pt-4">
+          <!--Title-->
+          <h4 class="white-text">EDIFICIO CENTRAL</h4>
+          <!--Text-->
+          <p class=" white-text">Polanco, CMDX</p>
+        </div>
+
+    </div>
+    <!-- Grid column -->
+  </div>
+  <!-- Grid row -->
+</div>
+<div class="d-flex justify-content-around">
+  <!-- Grid row -->
+  <div class="row">
+
+    <!-- Grid column -->
+    <div class="col-lg-4 col-md-12 mb-3">
+
+      <img src="img\index\u36.jpg" class="img-fluid z-depth-1"
+        alt="Responsive image" style=" width:100%;height: 350px;">
+        <div class="text-center pt-4">
+          <!--Title-->
+          <h4 class="white-text">TUNEL DEL SOL</h4>
+          <!--Text-->
+          <p class=" white-text">Acapulco, Guerrero</p>
+        </div>
+
+    </div>
+    <!-- Grid column -->
+
+    <!-- Grid column -->
+    <div class="col-lg-4 col-md-6 mb-3">
+
+      <img src="img\index\u39.jpg" class="img-fluid z-depth-1"
+        alt="Responsive image" style=" width:100%;height: 350px;">
+        <div class="text-center pt-4">
+          <!--Title-->
+          <h4 class="white-text">PUERTO AÉREO</h4>
+          <!--Text-->
+          <p class=" white-text">Toluca, Edo. Mex.</p>
+        </div>
+
+    </div>
+    <!-- Grid column -->
+
+    <!-- Grid column -->
+    <div class="col-lg-4 col-md-6 mb-3">
+
+      <img src="img\index\u4.jpg" class="img-fluid z-depth-1"
+        alt="Responsive image" style=" width:100%;height: 350px;">
+        <div class="text-center pt-4">
+          <!--Title-->
+          <h4 class="white-text">CASA VITA</h4>
+          <!--Text-->
+          <p class=" white-text">Polanco, CMDX</p>
+        </div>
+
+    </div>
+    <!-- Grid column -->
+  </div>
+  <!-- Grid row -->
+</div>
+  
+<div class="text-center white-text grey darken-2" style="padding-top: 35px;">
+  <h3>NUESTRO TRABAJO</h3>
+  <h4>Nuestro trabajo y experiencia nos respaldan</h4>
+  <!--Carousel Wrapper-->
+  <div id="multi-item-example" class="carousel slide carousel-multi-item carousel-multi-item-2" data-ride="carousel">
+  
+    <!--Slides-->
+    <div class="carousel-inner" role="listbox">
+  
+      <!--First slide-->
+      <div class="carousel-item active" >
+  
+        <div class="col-md-3 mb-3">
+          <div >
+            <img class="img-fluid" src="img\index\u65.png"
+              alt="Card image cap" style="width: 200px;">
+          </div>
+        </div>
+  
+        <div class="col-md-3 mb-3">
+          <div>
+            <img class="img-fluid" src="img\index\u66.png"
+              alt="Card image cap" style="width: 200px;">
+          </div>
+        </div>
+  
+        <div class="col-md-3 mb-3">
+          <div>
+            <img class="img-fluid" src="img\index\u67.png"
+              alt="Card image cap" style="width: 200px;">
+          </div>
+        </div>
+  
+        <div class="col-md-3 mb-3">
+          <div>
+            <img class="img-fluid" src="img\index\u68.png"
+              alt="Card image cap" style="width: 200px;">
+          </div>
+        </div>
+  
+      </div>
+      <!--/.First slide-->
+  
+      <!--Second slide-->
+      <div class="carousel-item justify-content-between">
+        <div class="row">
+          <div class="col-md-4 mb-3">
+            <div>
+              <img class="img-fluid" src="img\index\u69.png"
+                alt="Card image cap" style="width: 200px;">
+            </div>
+          </div>
+    
+          <div class="col-md-4 mb-3">
+            <div>
+              <img class="img-fluid" src="img\index\u70.png"
+                alt="Card image cap" style="width: 200px;">
+            </div>
+          </div>
+    
+          <div class="col-md-4 mb-3">
+            <div>
+              <img class="img-fluid" src="img\index\u71.png"
+                alt="Card image cap" style="width: 200px;">
+            </div>
+          </div> 
+        </div>
+      </div>
+      <!--/.Second slide-->
+    </div>
+    <!--/.Slides-->
+  </div>
+  <!--/.Carousel Wrapper-->
+</div>
+
+<div class="view" >
+  <img src="img\PAG PRINCIPAL\mapa.jpg" class="img-fluid" alt="Responsive image"style=" width:100%;height:100%;">
+  </div>  
+</div>
+
+
+ <!-- Footer -->
+ <footer class="page-footer font-small teal pt-4  grey darken-4">
+
+  <!-- Footer Text -->
+  <div class="container-fluid text-center text-md-left">
+
+    <!-- Grid row -->
+    <div class="row">
+
+      <!-- Grid column -->
+      <div class="col-md-6 mt-md-0 mt-3">
+
+        <!-- Content -->
+          <img src="img\PAG PRINCIPAL\sentimar.png" class="img-fluid"
+            alt="">
+          <a href="">
+            <div class="mask rgba-white-light"></div>
+          </a>
+      </div>
+      <!-- Grid column -->
+
+      <hr class="clearfix w-100 d-md-none pb-3">
+
+      <!-- Grid column -->
+      <div class="col-md-6 mb-md-0 mb-3">
+
+        <!-- Content -->
+        <ul class="list-unstyled pt-4">
+          <li class="px-3">
+            <a href="#!">INICIO</a>
+          </li>
+          <li class="px-3">
+            <a href="#!">NOSOTROS</a>
+          </li>
+          <li class="px-3">
+            <a href="#!">ILUMINACION</a>
+          </li>
+          <li class="px-3"> 
+            <a href="#!">ENERGIA SOLAR</a>
+            <li class="px-3">
+              <a href="#!">PENDING</a>
+            </li>
+            <li class="px-3">
+              <a href="#!">NUESTRO TRABAJO</a>
+            </li>
+            <li class="px-3">
+              <a href="#!">CONTACTO</a>
+            </li>
+        </ul>
+
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row -->
+
+  </div>
+  <!-- Footer Text -->
+
+</footer>
+<!-- Footer -->
+
+  <!-- jQuery -->
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="js/mdb.min.js"></script>
+  <!-- Your custom scripts (optional) -->
+  <script type="text/javascript"></script>
+
 </body>
 </html>
