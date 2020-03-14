@@ -1,0 +1,25 @@
+/* ----------------------------------------------------------------
+	Custom CSS
+
+	Add all your Custom Styled CSS here for New Styles or
+	Overwriting Default Theme Styles for Better Hanlding Updates
+-----------------------------------------------------------------*/
+@import url('https://fonts.googleapis.com/css?family=Exo+2:300');
+
+
+.titulos,h4,.widget_links ul > li > a,.portfolio-item *,.titulos *{
+font-family: 'Exo 2', sans-serif !important;
+}
+
+.textos{
+font-family: 'Oxygen', sans-serif !important;
+}
+#primary-menu ul li > a{
+    font-family: 'Exo 2', sans-serif !important;
+}
+#primary-menu ul li:hover > a, #primary-menu ul li.current > a {
+        color: #0080ff;
+}
+
+
+

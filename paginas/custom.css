@@ -1,0 +1,79 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 17/07/2017, 05:34:45 PM
+    Author     : LuisHernandez
+*/
+
+.item-camino{
+    width: 40%;
+    display: inline-block;
+    position: absolute;
+}
+.enchufe{
+
+}
+.simbolo{
+    margin-top: 7%;
+    right: 5%;
+}
+.foco{
+    margin-top: 27%;
+    right: 10%;
+
+}
+.telefono{
+    position: absolute;
+    margin-left: 10%;
+    margin-top: 8%;
+}
+.nubes > img{
+    position: absolute;
+    animation: float 1s infinite ease-in-out alternate;
+}
+
+.nube1{
+    margin-top: 12%;
+    margin-left: 31%;
+    animation-delay: .2s  !important;
+}
+.nube2{
+    margin-top: 12%;
+    margin-left: 43%;
+    animation-delay: .4s  !important;
+}
+.nube3{
+    margin-top: 16%;
+    margin-left: 20%;
+    animation-delay: .6s !important;
+}
+
+@keyframes float {
+    100% {
+        transform: translateY(10px);
+    }
+}
+
+@media (max-width: 1199px) and (min-width: 992px){
+
+    .telefono {
+        width: 43%;
+        margin-top: 12%;
+    }
+    .nube1{
+        margin-top: 17%;
+        margin-left: 29%;
+
+    }
+    .nube2{
+        margin-top: 16%;
+        margin-left: 43%;
+    }
+    .nube3{
+        margin-top: 20%;
+        margin-left: 20%;
+    }
+}
