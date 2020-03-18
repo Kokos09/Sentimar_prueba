@@ -16,7 +16,7 @@ body {
 }
 .row {
     margin-right: -1px;
-    margin-left: -1px
+    margin-left: -1px;
 }
 .nav1 {
     margin-bottom: 0
@@ -426,34 +426,21 @@ hr {
   }
   
   .accordion ul li:nth-child(1) { 
-    background-image: url("http://dev.fjwestcott.com/media/wysiwyg/home/home_ind_studio_portrait_photography_bob_harrington.jpg"); 
+    background-image: url("../img/index/u5.jpg"); 
     background-position: 50% 30%;
   }
   
   .accordion ul li:nth-child(2) { 
-    background-image: url("http://dev.fjwestcott.com/media/wysiwyg/home/home_ind_cinema_flex_whale_wars_gavin_garrison.jpg"); 
-   background-position: 70% 0%;
+    background-image: url("../img/index/led.jpg"); 
+   background-position: 50% 30%;
   }
   
   .accordion ul li:nth-child(3) { 
-    background-image: url("http://dev.fjwestcott.com/media/wysiwyg/home/home_ind_studio_portrait_photography_bob_harrington_bts.jpg"); 
-  background-position: 50% 50%;
+    background-image: url("../img/index/FARO.jpg"); 
+  background-position: 70% 0%;
   }
   
-  .accordion ul li:nth-child(4) { 
-    background-image: url("http://dev.fjwestcott.com/media/wysiwyg/home/home_ind_travel_rapidbox.jpg"); 
-    background-position: 30% 40%;
-  }
   
-  .accordion ul li:nth-child(5) { 
-    background-image: url("http://dev.fjwestcott.com/media/wysiwyg/home/home_ind_enthusiast_portrait_photography_little_studio_basics_lights.jpg"); 
-    background-position: 60% 64%;
-  }
-  
-  .accordion ul li:nth-child(6) { 
-    background-image: url("http://dev.fjwestcott.com/media/wysiwyg/home/home_ind_flex_enthusiast_portrait_photography.jpg"); 
-    background-position: 70% 25%;
-  }
   
   .accordion ul li { background-size: cover; }
   .accordion ul:hover li { width: 10%; }
@@ -488,5 +475,144 @@ hr {
       transform: translateX(0);
     }
   }
+
+  .zoom{
+    /* Aumentamos el ancho y la altura durante 1 segundo */
+    transition: width 1s, height 1s, transform 1s;
+    -moz-transition: width 1s, height 1s, -moz-transform 1s;
+    -webkit-transition: width 1s, height 1s, -webkit-transform 1s;
+    -o-transition: width 1s, height 1s,-o-transform 1s;    
+}
+.zoom:hover{
+    /* tranformamos  su tamaño al pasar el mouse por encima con scale(2.5). */
+    transform : scale(1.5);
+    -moz-transform : scale(1.5);      /* Firefox */
+    -webkit-transform : scale(1.5);   /* Chrome - Safari */
+    -o-transform : scale(1.5);        /* Opera */
+    text-shadow: 1px  0px 0px black,
+    0px  1px 0px black,
+   -1px  0px 0px black,
+    0px -1px 0px black;
+}
+
+.inicio{
+    text-shadow: 1px  0px 0px black,
+    0px  1px 0px black,
+   -1px  0px 0px black,
+    0px -1px 0px black;
+}
   
 
+
+.caja { 
+                      
+    font-family: sans-serif;
+    color: #000000;
+    background: #fafafa;
+    margin: 0 0 40px;
+    overflow: hidden;
+    padding: 20px;
+    border-radius: 35px 0px 35px 0px;
+    text-align: center;
+    font-family: 'PT Sans Bold', 'PT Sans', sans-serif;
+    width: 900px;
+       }
+    
+    
+    
+    
+    .nos {
+      background-image: url("/img/index/led.jpg"); 
+      font-size: 1.5em;
+        color: #FE7F88; 
+    }
+    
+    
+    
+    @import url(https://fonts.googleapis.com/css?family=Roboto:900);
+    
+    * {
+      padding: 0;
+      margin: 0;
+    }
+    
+    h1 {
+      margin:50px 0;
+      text-align:center;
+      color: rgb(253, 253, 253);
+      font-family: 'Roboto', sans-serif;
+      font-size: 70px;
+    }
+    
+    .efecto-espejo {
+     -webkit-box-reflect: below -30px -webkit-gradient(linear, left top, left bottom, from(transparent), to(rgba(255, 255, 255, 0.089)));
+    }
+    
+                   .brillo{
+                    color: rgb(252, 252, 200);
+                    text-shadow: 0 0 30px #fff;
+                  }
+    
+                  .direccion{
+                    font-family: 'PT Sans Bold', 'PT Sans', sans-serif;
+                    text-align: center;
+                    color: rgb(255, 255, 255);
+                    line-height: 5px;
+                    font-size: 16px;
+                  }
+    
+    
+                  ul {
+                    list-style: none; /* Remove default bullets */
+                  }
+                  
+                  ul li2::before {
+                    content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+                    color: white; /* Change the color */
+                    font-weight: bold; /* If you want it to be bold */
+                    padding-right: 10px;
+                    padding-left: 18px;
+                    width: 1em; /* Also needed for space (tweak if needed) */
+                    margin-left: -1em; /* Also needed for space (tweak if needed) */
+                  }
+    
+                  #contact .card:hover i,#contact .card:hover h4{
+                    color: #87d37c;
+                    
+    
+                  }
+                  .llamanos {
+                    font-size: 30px;
+                    font-family: 'PT Sans Bold', 'PT Sans', sans-serif;
+                    background-color: rgb(48, 18, 116);
+                }
+                .llamanos2 {
+                    font-size: 30px;
+                    font-family: 'PT Sans Bold', 'PT Sans', sans-serif;
+                    background-color: rgb(34, 146, 59);
+                }
+
+.quenecesitas{
+                     font-size: 30px;
+                    font-family: 'PT Sans Bold', 'PT Sans', sans-serif;
+                    color: #6bdd95;
+
+}
+
+.quenecesitas2{
+                  font-size: 15px;
+                    font-family: 'PT Sans Bold', 'PT Sans', sans-serif;
+                    color: #bbb;
+
+}
+
+.energia_number{
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 22px;
+    text-align: center;
+    font-family: 'PT Sans Bold', 'PT Sans', sans-serif;
+    border-radius: 100%;
+    background: #25d366;
+}

@@ -1,0 +1,330 @@
+
+
+  section {
+	height: 100%;
+	position: relative;
+	text-align: center;
+  }
+   
+  /* Center aligned first section */
+  section .inner {
+	margin: 0 auto;
+	max-width: 85%;
+  }
+   
+  /* Content of the following sections aligned next to the iphone */
+  section .innerText {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-100px, -50%);
+	text-align: left;
+  }
+   
+ 
+  section {
+	background: #000000;
+  }
+  
+  #inside {
+	background: #ffffff;
+  }
+
+/*scroll*/
+
+
+ol,
+ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+a,
+a:visited {
+    text-decoration: none;
+    color: #ffffff
+}
+
+
+.os-animation,
+.staggered-animation {
+    opacity: 0
+}
+.os-animation.animated,
+.global-header .os-animation.wrap,
+.section--hero nav .index span.os-animation,
+.section--hero__slider--info__item.animated h2 .letters span.os-animation,
+.section--hero__slider--info__item.is-selected.animated footer.os-animation,
+.section--hero__slider--info__item footer.os-animation,
+.section--people .grid figure picture.holding.animated svg path.os-animation,
+.section--people .grid figure picture.holding.animated svg circle.os-animation,
+.section--projects article header.os-animation,
+.section--projects article figure:hover header.os-animation,
+.global-menu footer .global-menu__secondary li.os-animation,
+.global-menu footer .os-animation.col,
+.global-menu__menu li.os-animation,
+.global-menu.active .global-menu__menu li.os-animation,
+.global-menu.active .global-menu__secondary li.os-animation,
+.loading.initial-load svg.os-animation,
+.loaded .loading svg.os-animation,
+.first-load .loading svg.os-animation,
+.letter-animation .letters span.os-animation,
+.staggered-animation.animated,
+.global-header .staggered-animation.wrap,
+.section--hero nav .index span.staggered-animation,
+.section--hero__slider--info__item.animated h2 .letters span.staggered-animation,
+.section--hero__slider--info__item.is-selected.animated footer.staggered-animation,
+.section--hero__slider--info__item footer.staggered-animation,
+.section--people .grid figure picture.holding.animated svg path.staggered-animation,
+.section--people .grid figure picture.holding.animated svg circle.staggered-animation,
+.section--projects article header.staggered-animation,
+.section--projects article figure:hover header.staggered-animation,
+.global-menu footer .global-menu__secondary li.staggered-animation,
+.global-menu footer .staggered-animation.col,
+.global-menu__menu li.staggered-animation,
+.global-menu.active .global-menu__menu li.staggered-animation,
+.global-menu.active .global-menu__secondary li.staggered-animation,
+.loading.initial-load svg.staggered-animation,
+.loaded .loading svg.staggered-animation,
+.first-load .loading svg.staggered-animation,
+.letter-animation .letters span.staggered-animation {
+    opacity: 1
+}
+:root {
+    --space: 2.2vmax
+}
+
+.section--scroll__grid__right ul
+ {
+    text-rendering: optimizelegibility;
+    font-weight: 400;
+    margin: 0
+}
+
+.section--scroll__grid__right ul a {
+    text-decoration: none
+}
+
+.section--scroll {
+    overflow: hidden;
+    position: relative;
+    padding-bottom: 0
+}
+.section--scroll .trigger {
+    position: absolute;
+    background: #000;
+    width: 5px;
+    height: 5px;
+    top: 0;
+    visibility: hidden
+}
+.section--scroll__grid {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr
+}
+.section--scroll__grid__left {
+    top: 0;
+    padding: 0 0 calc(var(--space)*5) 0;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    color: #000;
+    margin-top: 0!important
+}
+.section--scroll__grid__left .button {
+    padding: 0;
+    margin-right: auto;
+    margin-bottom: 12px
+}
+.section--scroll__grid__left ul {
+    font-size: 3em;
+    margin: 0;
+    position: relative;
+    -webkit-transition: all .4s ease-in-out;
+    -moz-transition: all .4s ease-in-out
+}
+.section--scroll__grid__left ul li {
+    color: #00f;
+    -webkit-transition: all .4s ease-in-out;
+    -moz-transition: all .4s ease-in-out;
+    opacity: 0;
+    filter: alpha(opacity=0)
+}
+.section--scroll__grid__left ul li a {
+    color: inherit
+}
+.section--scroll__grid__left ul li.hide {
+    -webkit-transition-delay: .2s;
+    -o-transition-delay: .2s;
+    transition-delay: .2s;
+    opacity: 0;
+    filter: alpha(opacity=0)
+}
+.section--scroll__grid__right {
+    line-height: 1.4;
+    padding: 0 calc(var(--space)*2) 0 0
+}
+.section--scroll__grid__right ul {
+    margin: calc(var(--space)*2) 0;
+    float: left;
+    width: 100%;
+    opacity: .1;
+    filter: alpha(opacity=10);
+    -webkit-transition: all .4s ease-in-out;
+    -moz-transition: all .4s ease-in-out
+}
+.section--scroll__grid__right ul.active {
+    opacity: 1;
+    filter: alpha(opacity=100)
+}
+.section--scroll__grid__right ul:last-of-type {
+    padding-bottom: calc(var(--space)*2)
+}
+.section--scroll__grid__right ul:first-of-type {
+    margin-top: calc(var(--space)/2)
+}
+.section--scroll__grid__right ul li {
+    display: inline-block;
+    position: relative;
+    -webkit-transition: all .4s ease-in-out;
+    -moz-transition: all .4s ease-in-out
+}
+.section--scroll__grid__right ul li.h2 {
+    font-size: 1em;
+    margin: 0 0 calc(var(--space)/2) 0;
+    display: block;
+    color: #00f
+}
+.section--scroll__grid__right ul li.h2:after {
+    display: none
+}
+.section--scroll__grid__right ul li:before {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    -webkit-transition: all .4s ease-in-out;
+    -moz-transition: all .4s ease-in-out;
+    background: #000;
+}
+.section--scroll__grid__right ul li:after {
+    content: '/';
+    display: inline-block;
+    margin-left: 10px;
+    color: white;
+}
+.section--scroll__grid__right ul li:last-child:after {
+    display: none
+}
+.section--scroll__grid__right ul li .scroll-breakdown__inner {
+    font-size: .9em;
+    line-height: 1.7;
+    margin: calc(var(--space)) 0
+}
+.section--scroll__grid__right ul li .scroll-breakdown__inner span {
+    display: inline-block
+}
+.section--scroll__grid__right ul li .scroll-breakdown__inner span:after {
+    content: '/';
+    display: inline-block;
+    color: #000;
+}
+.section--scroll__grid__right ul li .scroll-breakdown__inner span:last-of-type:after {
+    display: none
+}
+
+.careers-section .section--intro,
+.careers-section .section--intro .section--scroll__grid__right ul,
+.section--scroll__grid__right .careers-section .section--intro ul {
+    margin-top: 0
+}
+.careers-section .section--intro
+.careers-section .section--intro .section--scroll__grid__right ul,
+.section--scroll__grid__right .careers-section .section--intro ul {
+    margin: 0
+}
+
+    
+    .section--scroll__grid__right ul {
+        font-size: 1.75em
+    }
+ 
+    .section--scroll__grid__right ul.large {
+        font-size: 2em;
+        color:white
+    }
+    .section--scroll__grid {
+        -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr
+    }
+    .section--scroll__grid__left {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex
+    }
+    .section--scroll__grid__left ul {
+        font-size: 4em
+    }
+    .section--scroll__grid__left ul li {
+        color: rgba(218, 210, 210, 0.1)
+    }
+    .section--scroll__grid__left ul li.active {
+        color: rgb(255, 0, 0)
+    }
+    .section--scroll__grid__right ul {
+        padding: calc(var(--space)) 0 0 0;
+        margin: 0
+    }
+    .section--scroll__grid__right ul:first-of-type {
+        padding-top: 0
+    }
+    .section--scroll__grid__right ul li .scroll-breakdown__inner {
+        font-size: .7em
+    }
+    .section--scroll__grid__right ul li.h2 {
+        display: none
+    }
+    @-webkit-keyframes fadeInUpSmall {
+        0% {
+            opacity: 0;
+            -webkit-transform: translateY(5px);
+            transform: translateY(5px)
+        }
+        100% {
+            opacity: 1;
+            -webkit-transform: translateY(0);
+            transform: translateY(0)
+        }
+    }
+    @keyframes fadeInUpSmall {
+        0% {
+            opacity: 0;
+            -webkit-transform: translateY(5px);
+            -ms-transform: translateY(5px);
+            transform: translateY(5px)
+        }
+        100% {
+            opacity: 1;
+            -webkit-transform: translateY(0);
+            -ms-transform: translateY(0);
+            transform: translateY(0)
+        }
+    }
+    .fadeInUpSmall,
+    .section--hero nav .index span.is-selected,
+    .section--people .grid figure picture.holding.animated svg path,
+    .section--people .grid figure picture.holding.animated svg circle,
+    .loading.initial-load svg {
+        -webkit-animation-name: fadeInUpSmall;
+        animation-name: fadeInUpSmall
+    }
+   
