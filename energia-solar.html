@@ -1656,32 +1656,32 @@
   <div class="card-body bg-dark">
 
     <!-- Material form register -->
-    <form>
-      <p class="h4 text-center py-4 text-white">Sign up</p>
+    <form action="php/correo.php" method="POST">
+      <p class="h4 text-center py-4 text-white">Contactenos</p>
 
       <!-- Material input text -->
       <div class="md-form">
         <i class="fa fa-user prefix grey-text"></i>
-        <input type="text" id="materialFormCardNameEx" class="form-control">
+        <input type="text" name="name" id="materialFormCardNameEx" class="form-control" required>
         <label for="materialFormCardNameEx" class="font-weight-light text-white">Your name</label>
       </div>
 
       <!-- Material input email -->
       <div class="md-form">
         <i class="fa fa-envelope prefix grey-text"></i>
-        <input type="email" id="materialFormCardEmailEx" class="form-control">
+        <input type="email" name="email" id="materialFormCardEmailEx" class="form-control" required>
         <label for="materialFormCardEmailEx" class="font-weight-light text-white">Your email</label>
       </div>
 
       <!-- Material input email -->
       <div class="md-form">
         <i class="fas fa-phone-alt prefix grey-text"></i>
-        <input type="text" id="defaultRegisterPhonePassword" class="form-control" placeholder="Phone number" aria-describedby="defaultRegisterFormPhoneHelpBlock">
-        <label for="materialFormCardConfirmEx" class="font-weight-light text-white">Confirm your email</label>
+        <input type="text" name="phone" id="defaultRegisterPhonePassword" class="form-control" aria-describedby="defaultRegisterFormPhoneHelpBlock" required>
+        <label for="materialFormCardConfirmEx" class="font-weight-light text-white">Phone number</label>
       </div>
 
       <div class="text-center py-4 mt-3">
-        <button class="btn btn-cyan" type="submit">Register</button>
+        <button class="btn btn-cyan" type="submit">Enviar</button>
       </div>
     </form>
     <!-- Material form register -->
