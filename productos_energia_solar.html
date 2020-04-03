@@ -1,0 +1,864 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head> 
+<meta charset="UTF-8"> 
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> 
+<meta http-equiv="x-ua-compatible" content="ie=edge"> 
+
+<link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
+
+<link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png">
+
+<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-icon-72x72.png">
+
+<link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-icon-76x76.png">
+
+<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-icon-114x114.png">
+
+<link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-icon-120x120.png">
+
+<link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-icon-144x144.png">
+
+<link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-icon-152x152.png">
+
+<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-icon-180x180.png">
+
+<link rel="icon" type="image/png" sizes="192x192" href="img/favicon/android-icon-192x192.png">
+
+<link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+
+<link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png">
+
+<link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+
+<link rel="manifest" href="img/favicon/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="img/favicon/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff"> 
+<title>SentiMar
+</title> 
+<!-- MDB icon --> 
+
+<link rel="icon" href="img/favicon/favicon.ico" type="image/x-icon"> 
+<!-- Font Awesome --> 
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css"> 
+<!-- Google Fonts Roboto --> 
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"> 
+<!-- Bootstrap core CSS --> 
+
+<link rel="stylesheet" href="css/bootstrap.min.css"> 
+<!-- Material Design Bootstrap --> 
+
+<link rel="stylesheet" href="css/mdb.min.css"> 
+<!-- Your custom styles (optional) --> 
+
+<link rel="stylesheet" href="css/style.css">
+<style class="cp-pen-styles">
+
+  
+  #learn-more {
+    fill-opacity: 0;
+    fill: #fff;
+    stroke: #fff;
+    stroke-width: 2;
+    border-radius: 5px;
+    stroke-linejoin: round;
+    -webkit-transition: all 250ms ease-in;
+    transition: all 250ms ease-in;
+    cursor: pointer;
+  }
+  #learn-more:hover {
+    fill-opacity: 1;
+  }
+  #learn-more:hover ~ .learn-more-text {
+    fill: #25d366;
+  }
+  
+  .learn-more-text {
+    font-family: 'Roboto';
+    fill: #fff;
+    pointer-events: none;
+    font-size: 14px;
+    -webkit-transition: all 250ms ease-in;
+    transition: all 250ms ease-in;
+  }
+  
+  .center {
+    fill: #25d366;
+  }
+  
+  .pointer {
+    fill: #fff;
+    stroke: #25d366;
+    stroke-width: 2;
+  }
+  
+  .nav-copy {
+    font-family: 'Roboto';
+    fill: #fff;
+    fill-opacity: 1;
+    -webkit-transition: all 250ms ease-in;
+    transition: all 250ms ease-in;
+  }
+  .nav-copy.changing {
+    fill-opacity: 0;
+  }
+  
+  .service {
+    cursor: pointer;
+  }
+  .service text {
+    font-size: 14px;
+    font-family: 'Roboto';
+    text-anchor: middle;
+  }
+  .service .icon-wrapper {
+    -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+  }
+  .service .icon-wrapper, .service .icon-wrapper > * {
+    -webkit-transition: all 250ms ease-in;
+    transition: all 250ms ease-in;
+  }
+  .service circle {
+    fill: #25d366;
+  }
+  .service circle.shadow {
+    fill-opacity: 0;
+    -webkit-filter: url(#service-shadow);
+            filter: url(#service-shadow);
+  }
+  .service use {
+    fill: #fff;
+  }
+  .service text {
+    fill: #4d4d4d;
+  }
+  .service.active .icon-wrapper, .service:hover .icon-wrapper {
+    -webkit-transform: scale(1.15) translateY(-5px);
+            transform: scale(1.15) translateY(-5px);
+  }
+  .service.active .icon-wrapper, .service.active .icon-wrapper > *, .service:hover .icon-wrapper, .service:hover .icon-wrapper > * {
+    -webkit-transition: all 250ms ease-out;
+    transition: all 250ms ease-out;
+  }
+  .service.active .icon-wrapper circle.shadow, .service:hover .icon-wrapper circle.shadow {
+    fill-opacity: 0.4;
+  }
+  .service.active text, .service:hover text {
+    fill: #25d366;
+    font-weight: bold;
+  }
+  </style>
+
+</head>
+
+<body>
+<!--Navbar--><nav class="navbar navbar-expand-lg navbar-dark elegant-color fixed-top lighten-3 d-block" id="navbar"> 
+
+<div class="container"> 
+<!-- Collapsible content --> 
+
+<div class="collapse navbar-collapse mb-1" id="basicExampleNav"> 
+<ul class="navbar-nav ml-auto nav-flex-icons"> 
+<li class="nav-item"> <a class="nav-link" href="mailto:sales@sentimar.com?Subject=Me%20gustaría%20saber%20más%20de%20sus%20productos%20y%20servicios%20" style="font-size: 19px;">sales@sentimar.com </a> </li> 
+<li class="nav-item" ><a class="nav-link" href="https://twitter.com/sentimarmexico" target="_blank"style="padding-left: 40px" > <i class="fab fa-twitter-square"></i></a> </li> 
+<li class="nav-item"><a class="nav-link" href="https://www.facebook.com/SentiMar-868702093464156/"target="_blank" > <i class="fab fa-facebook-square"></i></a> </li> 
+</ul> 
+</div> 
+<!-- Collapsible content --> 
+</div> 
+<hr class="w-10 mt-0"> 
+
+<div class="container pb-1"> <a class="navbar-brand" href="index.html" > <img src="img\PAG PRINCIPAL\sentimar.png" height="60" alt="mdb logo"> </a> 
+<!-- Collapse button --> <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav1" aria-controls="basicExampleNav1" aria-expanded="false" aria-label="Toggle navigation"> 
+
+<span class="navbar-toggler-icon">
+</span> </button> 
+<!-- Collapsible content --> 
+
+<div class="collapse navbar-collapse pt-4" id="basicExampleNav1"> 
+<!-- Links --> 
+<ul class="navbar-nav mr-auto text-uppercase font-weight-normal"> <a> </a> 
+  <li class="nav-item"> <a class="nav-link" href="energia-solar.html" style="padding-top: 0px; padding-left: 8px;">INICIO</a> </li> 
+  <li class="nav-item"> <a class="nav-link" href="nuestro_trabajo_energia_solar.html"style="padding-top: 0px;">NUESTRO TRABAJO</a> </li> 
+  <li class="nav-item"> <a class="nav-link" href="energia-solar.html"style="padding-top: 0px;">¿Qué Necesitas?</a> </li>
+  <li class="nav-item"> <a class="nav-link" href="energia-solar.html"style="padding-top: 0px;">¿Cómo Funciona?</a> </li>  
+  <li class="nav-item"> <a class="nav-link" href="productos_energia_solar.html" style="padding-top: 0px;">PRODUCTOS</a> </li> 
+  <li class="nav-item"> <a class="nav-link" href="#contact"style="padding-top: 0px;">CONTACTO</a> </li> 
+  <li class="nav-item"><a href="energia-solar.html" class="nav-link" style="padding-top: 0px;"> <strong >Llama y cotiza gratis</a><a href="energia-solar.html" class="d-flex justify-content-end" style="color: aqua;font-family: 'PT Sans Bold', 'PT Sans', sans-serif; font-size: 22px;">(55) 5669 2357</strong> </a>  </li>
+  </ul> 
+<!-- Links --> 
+</div> 
+<!-- Collapsible content --> 
+</div></nav> 
+<!--/.Navbar--> <a href="https://wa.me/5215512902191?text=Me%20gustaría%20saber%20más%20de%20sus%20productos%20y%20servicios%20" class="whatsapp" target="_blank"> <i class="fab fa-whatsapp"></i></a> 
+<!-- Grid row -->
+
+
+
+
+<div class="row align-items-center flip-box" style="padding-top: 75px;" >
+<!-- Grid row -->
+
+<div class="view carousel-inner" role="listbox" style="padding-top: 0px;"> 
+
+<div class="item active"> <img src="img\energia_solar\paneless2.jpg" class="img-fluid" alt="Responsive image"style=" width:100%;height: 500pt;"> 
+</div> 
+
+<div class="mask flex-center"> 
+
+<div class="text-center"> 
+<!--Title--> <h1 class="white-text" style="font-size: 48pt;font-family: 'PT Sans Bold', 'PT Sans', sans-serif;padding-bottom: 80px;"><strong>PRODUCTOS</strong></h1> 
+
+
+<!-- Grid row -->
+
+
+<div class="row">
+
+  <div class="text-center" style="padding-left: 50PX;"> 
+  <div class="col-md-12" >
+    
+      <div class="container center">
+       
+        <div  class=" boton_personalizado" chref="iluminacion-led.html#section-contact" style=" padding-top: 10px;">Solicitar una cotizaci&oacute;n</div>  
+     
+  </div>
+
+
+
+</div>
+
+    </div>
+
+</div> 
+</div>
+
+
+
+</div>
+</div>
+</div>
+</div>
+
+
+
+
+
+
+
+<!-- Grid row -->
+<section id="nuestrotrabajosol"> 
+
+<div class="col-lg-12 col-md-12" style="background-color: black;position: relative;bottom: 10px;padding-top: 60px;" > 
+
+
+
+<div class="text-center "> 
+<!--Title--> <h2 class="text-light " style="font-size: 40px; padding-top: 80px; position: relative;bottom: 50px;font-family: 'PT Sans Bold', 'PT Sans', sans-serif"><strong>Paneles Solares</strong></h2> 
+<!--Text-->
+</div>
+</div>
+<!-- Grid column -->
+
+<div class="text-center" style="background-color: black;position: relative;bottom: 20px;padding-top: 0px;padding-bottom: 50px;"> 
+<!--Carousel Wrapper--> 
+
+<div id="multi-item-example" class="carousel slide carousel-multi-item carousel-multi-item-2" data-ride="carousel"> 
+<!--Slides--> 
+
+<div class="carousel-inner" role="listbox"> 
+<!--First slide--> 
+
+<div class="carousel-item active" > 
+
+<div class="row"> 
+
+<div class="col-md-6 mb-3"> 
+
+<div class="oc-item contprod contprod"> 
+
+<div class="iportfolio row" > 
+
+<div class="portfolio-image img-producto col-xs-12 col-sm-4 col-lg-4 col-md-4" > <img src="img/energia_solar/productosol/panel1.png" style=" widows: 350px;height: 200px;"> 
+</div> 
+
+<div class="portfolio-desc col-sm-6 col-lg-6 col-md-6" style="text-align: right;padding-top: 15px;"> <h3 class="titprod">Trina Solar</h3> 
+<hr> 
+
+<span class="desprod destit">Potencia 
+</span>
+
+<span class="desprod">300W, 335W
+</span>
+<br /> 
+
+<span class="desprod destit">Eficiencia 
+</span>
+
+<span class="desprod">17.0%, 17.2%
+</span>
+<br /> 
+
+
+<span class="desprod destit">Dimensión 
+</span>
+
+<span class="desprod"> 1960 x 992 x 40mm
+</span>
+<br /> 
+
+<span class="desprod destit">Peso 
+</span>
+
+<span class="desprod"> 22.5 kg
+</span> 
+</div> 
+</div> 
+</div> 
+</div> 
+
+<div class="col-md-6 mb-3"> 
+
+<div class="oc-item contprod contprod"> 
+
+<div class="iportfolio row" > 
+
+<div class="portfolio-image img-producto col-xs-12 col-sm-4 col-lg-4 col-md-4" > <img src="img/energia_solar/productosol/panel2.png"style=" widows: 350px;height: 200px; padding-right:400px"> 
+</div> 
+
+<div class="portfolio-desc col-sm-6 col-lg-6 col-md-6" style="text-align: right;padding-top: 15px;"> <h3 class="titprod">JA Solar</h3> 
+<hr> 
+
+<span class="desprod destit">Potencia 
+</span>
+
+<span class="desprod">330W, 335W, 385W
+</span>
+<br /> 
+
+<span class="desprod destit">Eficiencia 
+</span>
+
+<span class="desprod">17.0%, 17.2%, 19.8%
+</span>
+<br /> 
+
+
+<span class="desprod destit">Dimensión 
+</span>
+
+<span class="desprod"> 1960 x 991 x 40mm
+</span>
+<br /> 
+
+<span class="desprod destit">Peso 
+</span>
+
+<span class="desprod"> 22.5 Kg / 20 Kg
+</span> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+<!--/.First slide--> 
+</div> 
+<!--/.Slides--> 
+</div> 
+
+
+
+
+
+<div class="text-center "> 
+<!--Title--> <h3 class="text-light " style="font-size: 40px;padding-top: 70px; position: relative;bottom: 0px;font-family: 'PT Sans Bold', 'PT Sans', sans-serif"> <strong>Inversores</strong></h3> 
+<!--Text--> 
+</div> 
+<!--/.Carousel Wrapper-->
+</div>
+
+<div class="text-center" style="background-color: black;position: relative;bottom: 20px;padding-top: 0px;padding-bottom: 50px;"> 
+<!--Carousel Wrapper--> 
+
+<div id="multi-item-example2" class="carousel slide carousel-multi-item carousel-multi-item-2" data-ride="carousel"> 
+<!--Slides--> 
+
+<div class="carousel-inner" role="listbox"> 
+<!--First slide--> 
+
+<div class="carousel-item active" > 
+
+<div class="row"> 
+
+<div class="col-md-6 mb-3"> 
+
+<div class="oc-item contprod contprod"> 
+
+<div class="iportfolio row" > 
+
+<div class="portfolio-image img-producto col-xs-12 col-sm-4 col-lg-4 col-md-4" > <img src="img/energia_solar/productosol/SunnyBoy-new.png" style=" widows: 350px;height: 200px; padding-right:30px"> 
+</div> 
+
+<div class="portfolio-desc col-sm-6 col-lg-6 col-md-6" style="text-align: right;padding-top: 15px;"> <h3 class="titprod">Sunny Boy 3.0-US 3.8-US 5.0-US </h3> 
+<hr> 
+
+<span class="desprod destit">Potencia 
+</span>
+
+<span class="desprod">3000 W, 3330 W, 5000 W
+</span>
+<br /> 
+
+
+<span class="desprod destit">Peso 
+</span>
+
+<span class="desprod"> 26 Kg
+</span><br/> 
+
+<span class="desprod destit">Garantía 
+</span>
+
+<span class="desprod"> 5 años
+</span><br/> 
+
+<span class="desprod destit">Monitoreo vía Smartphone 
+</span> 
+</div> 
+</div> 
+</div> 
+</div> 
+
+<div class="col-md-6 mb-3"> 
+
+<div class="oc-item contprod contprod"> 
+
+<div class="iportfolio row" > 
+
+<div class="portfolio-image img-producto col-xs-12 col-sm-4 col-lg-4 col-md-4" > <img src="img/energia_solar/productosol/invsolis.png" style=" widows: 350px;height: 200px; padding-right:30px"> 
+</div> 
+
+<div class="portfolio-desc col-sm-6 col-lg-6 col-md-6" style="text-align: right;padding-top: 15px;"> <h3 class="titprod">Solis</h3> 
+<hr> 
+
+
+
+<span class="desprod destit">Eficiencia
+</span>
+
+<span class="desprod">97.2% - 97.5%
+</span>
+<br /> 
+
+
+<span class="desprod destit">Garantía 
+</span>
+
+<span class="desprod"> 5 años - 10 años
+</span><br/> 
+
+<span class="desprod destit">Interfaz Wi-fi y GPRS (Opcional) 
+</span> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+<!--/.First slide--> 
+<!--Second slide--> 
+
+<div class="carousel-item justify-content-between"> 
+
+<div class="row"> 
+
+<div class="col-md-6 mb-3"> 
+
+<div class="oc-item contprod contprod"> 
+
+<div class="iportfolio row" > 
+
+<div class="portfolio-image img-producto col-xs-12 col-sm-4 col-lg-4 col-md-4" > <img src="img/energia_solar/productosol/invprimo.png" style=" widows: 300px;height: 210px; padding-right:34px"> 
+</div> 
+
+<div class="portfolio-desc col-sm-6 col-lg-6 col-md-6" style="text-align: right;padding-top: 15px;"> <h3 class="titprod">Fronius Primo</h3> 
+<hr> 
+
+<span class="desprod destit">Potencia 
+</span>
+
+<span class="desprod">3.8 kW - 15 kW
+</span>
+<br /> 
+
+
+<span class="desprod destit">Número de fases 
+</span>
+
+<span class="desprod"> 2
+</span>
+<br /> 
+
+<span class="desprod destit">Peso 
+</span>
+
+<span class="desprod"> 21.5 Kg - 37.4 Kg
+</span><br/> 
+
+<span class="desprod destit">Garantía 
+</span>
+
+<span class="desprod"> 2 años plus + 8 años garantía estandar 
+</div> 
+</div> 
+</div> 
+</div> 
+
+<div class="col-md-6 mb-3"> 
+
+<div class="oc-item contprod contprod"> 
+
+<div class="iportfolio row" > 
+
+<div class="portfolio-image img-producto col-xs-12 col-sm-4 col-lg-4 col-md-4" > <img src="img/energia_solar/productosol/invgalvo.png" style=" widows: 300px;height: 210px; padding-right:34px"> 
+</div> 
+
+<div class="portfolio-desc col-sm-6 col-lg-6 col-md-6" style="text-align: right;padding-top: 15px;"> <h3 class="titprod">Fronius Galvo</h3> 
+<hr> 
+
+<span class="desprod destit">Potencia 
+</span>
+
+<span class="desprod">1.5 kW - 3.1 kW
+</span>
+<br /> 
+
+
+<span class="desprod destit">Número de fases 
+</span>
+
+<span class="desprod"> 2
+</span>
+<br /> 
+
+<span class="desprod destit">Peso 
+</span>
+
+<span class="desprod"> 16.8 Kg
+</span><br/> 
+
+<span class="desprod destit">Garantía 
+</span>
+
+<span class="desprod"> 2 años plus + 8 años garantía estandar 
+</span><br/> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+<!--/.Second slide--> 
+</div> 
+<!--/.Slides--> 
+</div> 
+<!--Controls--> <a class="carousel-control-prev" href="#multi-item-example2" role="button" data-slide="prev" style="padding-top: 150px;"> 
+
+<span class="carousel-control-prev-icon" aria-hidden="true">
+</span> 
+
+<span class="sr-only">Previous
+</span> </a> <a class="carousel-control-next" href="#multi-item-example2" role="button" data-slide="next"  style="padding-top: 150px;"> 
+
+<span class="carousel-control-next-icon" aria-hidden="true">
+</span> 
+
+<span class="sr-only">Next
+</span> </a> 
+<!--/.Controls--> 
+
+<div class="text-center "> 
+<!--Title--> <h3 class="text-light " style="font-size: 40px;padding-top: 70px; position: relative;bottom: 0px;font-family: 'PT Sans Bold', 'PT Sans', sans-serif"> <strong>Microinversores</strong></h3> 
+<!--Text--> 
+</div> 
+<!--/.Carousel Wrapper-->
+</div>
+
+<div class="text-center" style="background-color: black;position: relative;bottom: 20px;padding-top: 0px;padding-bottom: 50px;"> 
+<!--Carousel Wrapper--> 
+
+<div id="multi-item-example3" class="carousel slide carousel-multi-item carousel-multi-item-2" data-ride="carousel"> 
+<!--Slides--> 
+
+<div class="carousel-inner" role="listbox"> 
+<!--First slide--> 
+
+<div class="carousel-item active" > 
+
+<div class="row"> 
+
+<div class="col-md-6 mb-3"> 
+
+<div class="oc-item contprod contprod"> 
+
+<div class="iportfolio row" > 
+
+<div class="portfolio-image img-producto col-xs-12 col-sm-4 col-lg-4 col-md-4" > <img src="img/energia_solar/productosol/microHOYMILES.png" style=" widows: 300px;height: 210px; padding-right:34px; padding-top: 0px;"> 
+</div> 
+
+<div class="portfolio-desc col-sm-6 col-lg-6 col-md-6" style="text-align: right;padding-top: 15px;"> <h3 class="titprod">Hoymiles IM</h3> 
+<hr> 
+
+<span class="desprod destit">Potencia Max. de Salida 
+</span>
+
+<span class="desprod"> 548 VA, 600W, 1200W
+</span>
+<br /> 
+
+<span class="desprod destit">Eficiencia 
+</span>
+
+<span class="desprod"> 96.7 % 
+</span>
+<br /> 
+
+
+<span class="desprod destit">Garantía 
+</span>
+
+<span class="desprod"> 10 Años 
+</span><br/> 
+</div> 
+</div> 
+</div> 
+</div> 
+
+<div class="col-md-6 mb-3"> 
+
+<div class="oc-item contprod contprod"> 
+
+<div class="iportfolio row" > 
+
+<div class="portfolio-image img-producto col-xs-12 col-sm-4 col-lg-4 col-md-4" > <img src="img/energia_solar/productosol/microAP.png" style=" widows: 300px;height: 210px; padding-right:34px"> 
+</div> 
+
+<div class="portfolio-desc col-sm-6 col-lg-6 col-md-6" style="text-align: right;padding-top: 15px;"> <h3 class="titprod">APsystems</h3> 
+<hr> 
+
+<span class="desprod destit">Potencia Max. de Salida
+</span>
+
+<span class="desprod">300W, 700W, 1500W
+</span>
+<br /> 
+
+<span class="desprod destit">Eficiencia
+</span>
+
+<span class="desprod">95.0%, 96.7%, 96.5% 
+</span>
+<br /> 
+
+
+
+<span class="desprod destit">Garantía 
+</span>
+
+<span class="desprod"> 12 Años 
+</span><br/> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+<!--/.First slide--> 
+</div> 
+<!--/.Slides--> 
+</div> 
+<!--/.Carousel Wrapper-->
+
+</div>
+
+  
+  <!-- Footer Elements -->
+  <!-- Grid column -->
+
+
+<div class="text-center white-text  bg-success" style="padding-top: 35px;position: relative;bottom: 20px;"> <h3><strong>NUESTRO TRABAJO</strong></h3> <h4>Nuestro trabajo y experiencia nos respaldan</h4> 
+<!--Carousel Wrapper--> 
+
+<div id="multi-item-example" class="carousel slide carousel-multi-item carousel-multi-item-2" data-ride="carousel"> 
+<!--Slides--> 
+
+<div class="carousel-inner" role="listbox"> 
+<!--First slide--> 
+
+<div class="carousel-item active" > 
+
+<div class="col-md-3 mb-3"> 
+
+<div > <img class="img-fluid" src="img\index\u65.png" alt="Card image cap" style="width: 200px;"> 
+</div> 
+</div> 
+
+<div class="col-md-3 mb-3"> 
+
+<div> <img class="img-fluid" src="img\index\u66.png" alt="Card image cap" style="width: 200px;"> 
+</div> 
+</div> 
+
+<div class="col-md-3 mb-3"> 
+
+<div> <img class="img-fluid" src="img\index\u67.png" alt="Card image cap" style="width: 200px;"> 
+</div> 
+</div> 
+
+<div class="col-md-3 mb-3"> 
+
+<div> <img class="img-fluid" src="img\index\u68.png" alt="Card image cap" style="width: 200px;"> 
+</div> 
+</div> 
+</div> 
+<!--/.First slide--> 
+<!--Second slide--> 
+
+<div class="carousel-item justify-content-between"> 
+
+<div class="row"> 
+
+<div class="col-md-4 mb-3"> 
+
+<div> <img class="img-fluid" src="img\index\u69.png" alt="Card image cap" style="width: 200px;"> 
+</div> 
+</div> 
+
+<div class="col-md-4 mb-3"> 
+
+<div> <img class="img-fluid" src="img\index\u70.png" alt="Card image cap" style="width: 200px;"> 
+</div> 
+</div> 
+
+<div class="col-md-4 mb-3"> 
+
+<div> <img class="img-fluid" src="img\index\u71.png" alt="Card image cap" style="width: 200px;"> 
+</div> 
+</div> 
+</div> 
+</div> 
+<!--/.Second slide--> 
+</div> 
+<!--/.Slides--> 
+</div> 
+<!--/.Carousel Wrapper-->
+</div> 
+
+
+</div>
+
+<div  class="bg-dark"> 
+  <section id="contact">
+    <div class="container">
+        <h2 class="text-center text-uppercase " style="color:#87d37c; font-family:'PT Sans Bold', 'PT Sans', sans-serif ;padding-top: 20px;">Contacto</h2>      
+        <div class="row">
+          <div class="col-sm-12 col-md-6 col-lg-4 my-5">
+            <div class="card border-0 bg-dark" style="color:white;">
+              <div class="card-body text-center ">
+                   <i class="fa fa-globe fa-5x mb-3" aria-hidden="true"></i>
+                   
+                   <div class="direccion">
+                    <ul class="navbar-nav ml-auto nav-flex-icons">
+              <li class="nav-item">
+                <a class="nav-link" href="mailto:sales@sentimar.com?Subject=Me%20gustaría%20saber%20más%20de%20sus%20productos%20y%20servicios%20" style="color:white;font-family: 'PT Sans Bold', 'PT Sans', sans-serif;line-height: 30px;padding-top: 9%;">sales@sentimar.com</a>
+            </li>  </ul> </div> 
+  
+                 </div>
+               </div>
+            </div>
+          <div class="col-sm-12 col-md-6 col-lg-4 my-5">
+            <div class="card border-0 bg-dark" style="color:white;">
+              <div class="card-body text-center ">
+                 <i class="fa fa-phone fa-5x mb-3" aria-hidden="true"></i>
+                  <div class="direccion">
+                  <ul class="navbar-nav ml-auto nav-flex-icons">
+            <li class="nav-item">
+              <a class="nav-link" href="tel:+525556692357" style="color:white;font-family: 'PT Sans Bold', 'PT Sans', sans-serif;line-height: 30px;padding-top: 9%;">+52 55 5669 2357</a>
+          </li>  </ul> </div> 
+               </div>
+             </div>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-4 my-5">
+            <div class="card border-0 bg-dark" style="color:white;">
+               <div class="card-body text-center ">
+                 <i class="fa fa-clock fa-5x mb-3 " aria-hidden="true"></i>
+                
+                <p style="padding-top: 9%; font-family: 'PT Sans Bold', 'PT Sans', sans-serif;">Lunes - Viernes de 9 a 18:30 hrs </p>
+               </div>
+             </div>
+          </div>
+  
+        </div>
+    </div>
+  </section>
+</div>
+
+
+
+  
+
+<!-- Footer --><footer class="page-footer font-small elegant-color lighten-3 py-4 text-light" style="position: relative;bottom: 20px;">
+<!-- Footer --><footer class="page-footer font-small elegant-color lighten-3 py-4 text-light"> 
+<!-- Footer Elements --> 
+
+<div class="container"> 
+
+<div class="row"> 
+
+<div class="col-md-2" style="right:20px;"> <img src="img\PAG PRINCIPAL\sentimar.png" height="50" alt="mdb logo" > 
+</div> 
+
+<div class="col-md-6"> 
+  <ul class="list-unstyled d-flex justify-content-center mb-1 mt-2"> 
+  <li> <h6><a class="nav-link font-small text-muted"href="energia-solar.html">INICIO</a></h6> </li> 
+  <li> <h6><a class="nav-link font-small text-muted" href="nuestro_trabajo_energia_solar.html">NUESTRO TRABAJO</a></h6> </li> 
+  <li class="nav-item"> <h6><a class="nav-link font-small text-muted" href="energia-solar.html">¿QUÉ NECESITAS?</a></h6> </li> 
+  </ul> 
+  </div> 
+  
+  <div class="col-md-2"> 
+  <ul class="list-unstyled d-flex justify-content-center mb-2 mt-2"> 
+  <li> <h6><a class="nav-link font-small text-muted" href="energia-solar.html">¿CÓMO FUNCIONA?</a></h6> </li> 
+  <li class="nav-item"> <h6><a class="nav-link font-small text-muted" href="productos_energia_solar.html">PRODUCTOS</a></h6> </li> 
+  <li class="nav-item"> <h6><a class="nav-link font-small text-muted" href="#contact">CONTACTO</a></h6> </li> 
+  
+  </ul>  
+</div> 
+</div> 
+</div> 
+<!-- Footer Elements -->
+</footer>
+<!-- Footer --> 
+<!-- jQuery --> 
+<script type="text/javascript" src="js/jquery.min.js">
+</script> 
+<!-- Bootstrap tooltips --> 
+<script type="text/javascript" src="js/popper.min.js">
+</script> 
+<!-- Bootstrap core JavaScript --> 
+<script type="text/javascript" src="js/bootstrap.min.js">
+</script> 
+<!-- MDB core JavaScript --> 
+<script type="text/javascript" src="js/mdb.min.js">
+</script> 
+<!-- Your custom scripts (optional) --> 
+<script type="text/javascript" src="js/style.js" >
+</script>
+</body>
+</html>

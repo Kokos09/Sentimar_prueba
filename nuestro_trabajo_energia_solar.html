@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head> 
+<meta charset="UTF-8"> 
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> 
+<meta http-equiv="x-ua-compatible" content="ie=edge"> 
+
+<link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
+
+<link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png">
+
+<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-icon-72x72.png">
+
+<link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-icon-76x76.png">
+
+<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-icon-114x114.png">
+
+<link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-icon-120x120.png">
+
+<link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-icon-144x144.png">
+
+<link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-icon-152x152.png">
+
+<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-icon-180x180.png">
+
+<link rel="icon" type="image/png" sizes="192x192" href="img/favicon/android-icon-192x192.png">
+
+<link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+
+<link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png">
+
+<link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+
+<link rel="manifest" href="img/favicon/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="img/favicon/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff"> 
+<title>SentiMar
+</title> 
+<!-- MDB icon --> 
+
+<link rel="icon" href="img/favicon/favicon.ico" type="image/x-icon"> 
+<!-- Font Awesome --> 
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css"> 
+<!-- Google Fonts Roboto --> 
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"> 
+<!-- Bootstrap core CSS --> 
+
+<link rel="stylesheet" href="css/bootstrap.min.css"> 
+<!-- Material Design Bootstrap --> 
+
+<link rel="stylesheet" href="css/mdb.min.css"> 
+<!-- Your custom styles (optional) --> 
+
+<link rel="stylesheet" href="css/style.css">
+<style class="cp-pen-styles">
+
+  
+  #learn-more {
+    fill-opacity: 0;
+    fill: #fff;
+    stroke: #fff;
+    stroke-width: 2;
+    border-radius: 5px;
+    stroke-linejoin: round;
+    -webkit-transition: all 250ms ease-in;
+    transition: all 250ms ease-in;
+    cursor: pointer;
+  }
+  #learn-more:hover {
+    fill-opacity: 1;
+  }
+  #learn-more:hover ~ .learn-more-text {
+    fill: #25d366;
+  }
+  
+  .learn-more-text {
+    font-family: 'Roboto';
+    fill: #fff;
+    pointer-events: none;
+    font-size: 14px;
+    -webkit-transition: all 250ms ease-in;
+    transition: all 250ms ease-in;
+  }
+  
+  .center {
+    fill: #25d366;
+  }
+  
+  .pointer {
+    fill: #fff;
+    stroke: #25d366;
+    stroke-width: 2;
+  }
+  
+  .nav-copy {
+    font-family: 'Roboto';
+    fill: #fff;
+    fill-opacity: 1;
+    -webkit-transition: all 250ms ease-in;
+    transition: all 250ms ease-in;
+  }
+  .nav-copy.changing {
+    fill-opacity: 0;
+  }
+  
+  .service {
+    cursor: pointer;
+  }
+  .service text {
+    font-size: 14px;
+    font-family: 'Roboto';
+    text-anchor: middle;
+  }
+  .service .icon-wrapper {
+    -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+  }
+  .service .icon-wrapper, .service .icon-wrapper > * {
+    -webkit-transition: all 250ms ease-in;
+    transition: all 250ms ease-in;
+  }
+  .service circle {
+    fill: #25d366;
+  }
+  .service circle.shadow {
+    fill-opacity: 0;
+    -webkit-filter: url(#service-shadow);
+            filter: url(#service-shadow);
+  }
+  .service use {
+    fill: #fff;
+  }
+  .service text {
+    fill: #4d4d4d;
+  }
+  .service.active .icon-wrapper, .service:hover .icon-wrapper {
+    -webkit-transform: scale(1.15) translateY(-5px);
+            transform: scale(1.15) translateY(-5px);
+  }
+  .service.active .icon-wrapper, .service.active .icon-wrapper > *, .service:hover .icon-wrapper, .service:hover .icon-wrapper > * {
+    -webkit-transition: all 250ms ease-out;
+    transition: all 250ms ease-out;
+  }
+  .service.active .icon-wrapper circle.shadow, .service:hover .icon-wrapper circle.shadow {
+    fill-opacity: 0.4;
+  }
+  .service.active text, .service:hover text {
+    fill: #25d366;
+    font-weight: bold;
+  }
+  </style>
+
+</head>
+
+<body>
+<!--Navbar--><nav class="navbar navbar-expand-lg navbar-dark elegant-color fixed-top lighten-3 d-block" id="navbar"> 
+
+<div class="container"> 
+<!-- Collapsible content --> 
+
+<div class="collapse navbar-collapse mb-1" id="basicExampleNav"> 
+<ul class="navbar-nav ml-auto nav-flex-icons"> 
+<li class="nav-item"> <a class="nav-link" href="mailto:sales@sentimar.com?Subject=Me%20gustaría%20saber%20más%20de%20sus%20productos%20y%20servicios%20" style="font-size: 19px;">sales@sentimar.com </a> </li> 
+<li class="nav-item" ><a class="nav-link" href="https://twitter.com/sentimarmexico" target="_blank"style="padding-left: 40px" > <i class="fab fa-twitter-square"></i></a> </li> 
+<li class="nav-item"><a class="nav-link" href="https://www.facebook.com/SentiMar-868702093464156/"target="_blank" > <i class="fab fa-facebook-square"></i></a> </li> 
+</ul> 
+</div> 
+<!-- Collapsible content --> 
+</div> 
+<hr class="w-10 mt-0"> 
+
+<div class="container pb-1"> <a class="navbar-brand" href="index.html" > <img src="img\PAG PRINCIPAL\sentimar.png" height="60" alt="mdb logo"> </a> 
+<!-- Collapse button --> <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav1" aria-controls="basicExampleNav1" aria-expanded="false" aria-label="Toggle navigation"> 
+
+<span class="navbar-toggler-icon">
+</span> </button> 
+<!-- Collapsible content --> 
+
+<div class="collapse navbar-collapse pt-4" id="basicExampleNav1"> 
+<!-- Links --> 
+<ul class="navbar-nav mr-auto text-uppercase font-weight-normal"> <a> </a> 
+    <li class="nav-item"> <a class="nav-link" href="energia-solar.html" style="padding-top: 0px; padding-left: 8px;">INICIO</a> </li> 
+    <li class="nav-item"> <a class="nav-link" href="nuestro_trabajo_energia_solar.html"style="padding-top: 0px;">NUESTRO TRABAJO</a> </li> 
+    <li class="nav-item"> <a class="nav-link" href="energia-solar.html"style="padding-top: 0px;">¿Qué Necesitas?</a> </li>
+    <li class="nav-item"> <a class="nav-link" href="energia-solar.html"style="padding-top: 0px;">¿Cómo Funciona?</a> </li>  
+    <li class="nav-item"> <a class="nav-link" href="productos_energia_solar.html" style="padding-top: 0px;">PRODUCTOS</a> </li> 
+    <li class="nav-item"> <a class="nav-link" href="#contact"style="padding-top: 0px;">CONTACTO</a> </li> 
+    <li class="nav-item"><a href="energia-solar.html" class="nav-link" style="padding-top: 0px;"> <strong >Llama y cotiza gratis</a><a href="energia-solar.html" class="d-flex justify-content-end" style="color: aqua;font-family: 'PT Sans Bold', 'PT Sans', sans-serif; font-size: 22px;">(55) 5669 2357</strong> </a>  </li>
+    </ul> 
+<!-- Links --> 
+</div> 
+<!-- Collapsible content --> 
+</div></nav> 
+<!--/.Navbar--> <a href="https://wa.me/5215512902191?text=Me%20gustaría%20saber%20más%20de%20sus%20productos%20y%20servicios%20" class="whatsapp" target="_blank"> <i class="fab fa-whatsapp"></i></a> 
+<!-- Grid row -->
+
+
+
+
+<div class="row align-items-center flip-box" style="padding-top: 75px;" >
+<!-- Grid row -->
+
+<div class="view carousel-inner" role="listbox" style="padding-top: 0px;"> 
+
+<div class="item active"> <img src="img\energia_solar\paneless2.jpg" class="img-fluid" alt="Responsive image"style=" width:100%;height: 500pt;"> 
+</div> 
+
+<div class="mask flex-center"> 
+
+<div class="text-center"> 
+<!--Title--> <h1 class="white-text" style="font-size: 48pt;font-family: 'PT Sans Bold', 'PT Sans', sans-serif;padding-bottom: 80px;"><strong>Nuestro Trabajo</strong></h1> 
+
+
+</div>
+
+
+</div>
+</div>
+</div>
+</div>
+
+
+
+
+<div class="row align-items-center"> 
+
+    <div class="col-lg-7 col-md-6 view" style="padding-right: 0px;padding-left: 0px;"> 
+    
+    <div class="view overlay"> <img src="img\energia_solar\panelcasaho.jpg" class=" wow fadeInLeft img-fluid z-depth-1" alt="Responsive image"style=" width:100%;height: 500px;"> 
+    
+    <div class="mask flex-center rgba-white-strong"> 
+    
+    <p class="text-black-50" style="font-size: 25px;font-family: 'PT Sans Bold', 'PT Sans', sans-serif;">Instalaciones Garantizadas</p> 
+    </div> 
+    </div>
+    </div> 
+    
+    <div class="col-lg-5 col-md-6" style="padding-right: 0px;padding-left: 0px;"> 
+    
+    <div class="view overlay"> 
+    
+    <div class="col" style="padding-right: 0px;padding-left: 0px;"> <img src="img\energia_solar\u119.jpeg" class=" wow fadeInRight img-fluid z-depth-1" alt="Responsive image"style=" width:100%;height: 250px;"> 
+    
+    <div class="mask flex-center rgba-white-strong"> 
+    
+    <p class="text-black-50" style="font-size: 25px;font-family: 'PT Sans Bold', 'PT Sans', sans-serif;">Personal Capacitado</p> 
+    </div> 
+    </div> 
+    </div> 
+    
+    <div class="col" style="padding-right: 0px;padding-left: 0px;"> 
+    
+    <div class="view overlay"> <img src="img\energia_solar\u120.png" class=" wow fadeInRight img-fluid z-depth-1" alt="Responsive image"style=" width:100%;height: 250px;"> 
+    
+    <div class="mask flex-center rgba-white-strong"> 
+    
+    <p class="text-black-50" style="font-size: 25px;font-family: 'PT Sans Bold', 'PT Sans', sans-serif;">Materiales de Calidad</p> 
+    </div> 
+    </div> 
+    </div> 
+    </div>
+    </div>
+    <!-- Grid row -->
+    <!-- Grid row -->
+    
+    <div class="row align-items-center">
+    
+    <div class="col-lg-5 col-md-6" style="padding-right: 0px;padding-left: 0px;"> 
+    
+    <div class="view overlay">
+    
+    <div class="col" style="padding-right: 0px;padding-left: 0px;"> <img src="img\energia_solar\u121ofi.jpg" class=" wow fadeInLeft img-fluid z-depth-11" alt="Responsive image"style=" width:100%;height: 250px;"> 
+    
+    <div class="mask flex-center rgba-white-strong"> 
+    
+    <p class="text-black-50" style="font-size: 25px;font-family: 'PT Sans Bold', 'PT Sans', sans-serif;">Experiencia</p> 
+    </div>
+    </div>
+    </div>
+    <div class="view overlay">
+    <div class="col" style="padding-right: 0px;padding-left: 0px;"> <img src="img\energia_solar\u118.jpeg" class=" wow fadeInLeft img-fluid z-depth-1" alt="Responsive image"style=" width:100%;height: 250px;">
+      <div class="mask flex-center rgba-white-strong"> 
+    
+        <p class="text-black-50" style="font-size: 25px;font-family: 'PT Sans Bold', 'PT Sans', sans-serif;">Servicio Garantizado</p> 
+        </div>
+    </div>
+    </div>
+    </div>
+    
+    <div class="col-lg-7 col-md-6 view" style="padding-right: 0px;padding-left: 0px;"> 
+    
+    <div class="view overlay"><img src="img\energia_solar\u117.jpg" class=" wow fadeInRight img-fluid z-depth-1" alt="Responsive image"style=" width:100%;height: 500px;">
+    
+    <div class="mask flex-center rgba-white-strong"> <a class="text-black-50" href="Catalogo_sistemas_fotovoltaicos.pdf"target="_blank" style="font-size: 25px;font-family: 'PT Sans Bold', 'PT Sans', sans-serif;">Ver Catálogo</a>
+    </div>
+    </div>
+    </div>
+    </div>
+
+
+
+
+<div class="llamanos2">
+    <div class="text-center white-text  bg-blue" style="padding-top: 70px;padding-bottom: 70px; color:rgb(42, 199, 89)">
+      <h2><strong>L L A M A N O S</strong></h2>
+    
+      
+      <h3 class="white-text">+52 (55) 5669 2357</h3>
+     </div> 
+    </div>
+  <!-- Grid column -->
+  <!-- Grid row -->
+    <!--end background-->
+  
+  <div  style="background-color: black;  bottom: 10px; padding-top: 80px;">
+  
+  
+    <div >
+  
+    
+    <div class="row d-flex justify-content-around">
+    
+      <div class="col-lg-2 col-md-2 mb-6"> 
+    
+    <div class="view overlay"> <img src="img\energia_solar\u103.png" alt="Avatar" class="img-fluid z-depth-1" style=" width:85%;height:120px;"> 
+    
+    <div class="mask flex-center black"> 
+    
+    <p class="text-success" style="font-size: 20px;font-family: 'PT Sans Bold', 'PT Sans', sans-serif ;text-align: center;">Todos los productos a cualquier parte de la Republica </p> 
+    </div> 
+    </div> 
+    
+    <div class="text-center pt-5"> 
+    <!--Title--> 
+    
+    <p class=" white-text" style="padding-bottom:90px ;padding-right: 5px;font-family: 'PT Sans Bold', 'PT Sans', sans-serif ;"><strong>Venta Directa</strong></p> 
+    </div> 
+    </div> 
+    
+    <div class="col-lg-2 col-md-2 mb-6"> 
+    
+    <div class="view overlay "> <img src="img\energia_solar\u104.png" alt="Avatar" class="img-fluid z-depth-1" style=" width:85%;height: 70%;"> 
+    
+    <div class="mask flex-center black"> 
+    
+    <p class="text-success" style="font-size: 20px;font-family: 'PT Sans Bold', 'PT Sans', sans-serif;text-align: center;">Información de nuestros productos, fichas técnicas y beneficios de la energía solar </p> 
+    </div> 
+    </div> 
+    
+    <div class="text-center pt-3"> 
+    <!--Title--> 
+    
+    <p class=" white-text" style="padding-bottom:90px ;padding-right: 15px;font-family: 'PT Sans Bold', 'PT Sans', sans-serif ;"><strong>Asesoría Técnica</strong></p> 
+    </div> 
+    </div> 
+    
+    <div class="col-lg-2 col-md-2 mb-6"> 
+    
+    <div class="view overlay"> <img src="img\energia_solar\u105.png" alt="Avatar" class="img-fluid z-depth-1" style=" width:85%;height: 70%;"> 
+    
+    <div class="mask flex-center black"> 
+    
+    <p class="text-success" style="font-size: 20px;font-family: 'PT Sans Bold', 'PT Sans', sans-serif;text-align: center;">Nosotros lo dejamos funcionando </p> 
+    </div> 
+    </div> 
+    
+    <div class="text-center pt-3"> 
+    <!--Title--> 
+    
+    <p class=" white-text"style="padding-bottom:90px ;padding-right: 10px;font-family: 'PT Sans Bold', 'PT Sans', sans-serif"><strong>Llave en Mano</strong></p> 
+    </div> 
+    </div> 
+    
+    <div class="col-lg-2 col-md-2 mb-6"> 
+  
+    <div class="view overlay"> <img src="img\energia_solar\u107.png" alt="Avatar" class="img-fluid z-depth-1" style=" width:85%;height: 70%;"> 
+    
+    <div class="mask flex-center black"> 
+    
+    <p class="text-success" style="font-size: 20px;font-family: 'PT Sans Bold', 'PT Sans', sans-serif;text-align: center;">Calculos, fichas técnicas y manuales de los equipos cumpliendo con las certificaciones </p> 
+    </div> 
+    </div> 
+    
+    <div class="text-center pt-3"> 
+    <!--Title--> 
+    
+    <p class=" white-text"style="padding-bottom:90px ;padding-right: 15px;font-family: 'PT Sans Bold', 'PT Sans', sans-serif"><strong>Gestoría ante CFE</strong></p> 
+    </div> 
+    </div> 
+    
+   <div class="col-lg-2 col-md-2 mb-6">  
+    
+    <div class="view overlay"> <img src="img\energia_solar\u108.png" alt="Avatar" class="img-fluid z-depth-1" style=" width:85%;height: 70%;"> 
+    
+    <div class="mask flex-center black"> 
+    
+    <p class="text-success" style="font-size: 20px;font-family: 'PT Sans Bold', 'PT Sans', sans-serif;text-align: center;">Personal técnico capacitado para realizar las instalaciones </p> 
+    </div> 
+    </div> 
+    
+    <div class="text-center pt-3"> 
+    <!--Title--> 
+    
+    <p class=" white-text"style="padding-right: 15px; padding-bottom:90px ;font-family: 'PT Sans Bold', 'PT Sans', sans-serif"><strong>Personal Capacitado</strong></p> 
+    </div> 
+    </div>
+    </div>
+    </div>
+
+
+
+
+<div class="text-center white-text  bg-success" style="padding-top: 35px;position: relative;bottom: 20px;"> <h3><strong>NUESTRO TRABAJO</strong></h3> <h4>Nuestro trabajo y experiencia nos respaldan</h4> 
+<!--Carousel Wrapper--> 
+
+<div id="multi-item-example" class="carousel slide carousel-multi-item carousel-multi-item-2" data-ride="carousel"> 
+<!--Slides--> 
+
+<div class="carousel-inner" role="listbox"> 
+<!--First slide--> 
+
+<div class="carousel-item active" > 
+
+<div class="col-md-3 mb-3"> 
+
+<div > <img class="img-fluid" src="img\index\u65.png" alt="Card image cap" style="width: 200px;"> 
+</div> 
+</div> 
+
+<div class="col-md-3 mb-3"> 
+
+<div> <img class="img-fluid" src="img\index\u66.png" alt="Card image cap" style="width: 200px;"> 
+</div> 
+</div> 
+
+<div class="col-md-3 mb-3"> 
+
+<div> <img class="img-fluid" src="img\index\u67.png" alt="Card image cap" style="width: 200px;"> 
+</div> 
+</div> 
+
+<div class="col-md-3 mb-3"> 
+
+<div> <img class="img-fluid" src="img\index\u68.png" alt="Card image cap" style="width: 200px;"> 
+</div> 
+</div> 
+</div> 
+<!--/.First slide--> 
+<!--Second slide--> 
+
+<div class="carousel-item justify-content-between"> 
+
+<div class="row"> 
+
+<div class="col-md-4 mb-3"> 
+
+<div> <img class="img-fluid" src="img\index\u69.png" alt="Card image cap" style="width: 200px;"> 
+</div> 
+</div> 
+
+<div class="col-md-4 mb-3"> 
+
+<div> <img class="img-fluid" src="img\index\u70.png" alt="Card image cap" style="width: 200px;"> 
+</div> 
+</div> 
+
+<div class="col-md-4 mb-3"> 
+
+<div> <img class="img-fluid" src="img\index\u71.png" alt="Card image cap" style="width: 200px;"> 
+</div> 
+</div> 
+</div> 
+</div> 
+<!--/.Second slide--> 
+</div> 
+<!--/.Slides--> 
+</div> 
+<!--/.Carousel Wrapper-->
+</div> 
+
+
+</div>
+
+<div  class="bg-dark"> 
+  <section id="contact">
+    <div class="container">
+        <h2 class="text-center text-uppercase " style="color:#87d37c; font-family:'PT Sans Bold', 'PT Sans', sans-serif ;padding-top: 20px;">Contacto</h2>      
+        <div class="row">
+          <div class="col-sm-12 col-md-6 col-lg-4 my-5">
+            <div class="card border-0 bg-dark" style="color:white;">
+              <div class="card-body text-center ">
+                   <i class="fa fa-globe fa-5x mb-3" aria-hidden="true"></i>
+                   
+                   <div class="direccion">
+                    <ul class="navbar-nav ml-auto nav-flex-icons">
+              <li class="nav-item">
+                <a class="nav-link" href="mailto:sales@sentimar.com?Subject=Me%20gustaría%20saber%20más%20de%20sus%20productos%20y%20servicios%20" style="color:white;font-family: 'PT Sans Bold', 'PT Sans', sans-serif;line-height: 30px;padding-top: 9%;">sales@sentimar.com</a>
+            </li>  </ul> </div> 
+  
+                 </div>
+               </div>
+            </div>
+          <div class="col-sm-12 col-md-6 col-lg-4 my-5">
+            <div class="card border-0 bg-dark" style="color:white;">
+              <div class="card-body text-center ">
+                 <i class="fa fa-phone fa-5x mb-3" aria-hidden="true"></i>
+                  <div class="direccion">
+                  <ul class="navbar-nav ml-auto nav-flex-icons">
+            <li class="nav-item">
+              <a class="nav-link" href="tel:+525556692357" style="color:white;font-family: 'PT Sans Bold', 'PT Sans', sans-serif;line-height: 30px;padding-top: 9%;">+52 55 5669 2357</a>
+          </li>  </ul> </div> 
+               </div>
+             </div>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-4 my-5">
+            <div class="card border-0 bg-dark" style="color:white;">
+               <div class="card-body text-center ">
+                 <i class="fa fa-clock fa-5x mb-3 " aria-hidden="true"></i>
+                
+                <p style="padding-top: 9%; font-family: 'PT Sans Bold', 'PT Sans', sans-serif;">Lunes - Viernes de 9 a 18:30 hrs </p>
+               </div>
+             </div>
+          </div>
+  
+        </div>
+    </div>
+  </section>
+</div>
+
+
+
+  
+
+<!-- Footer --><footer class="page-footer font-small elegant-color lighten-3 py-4 text-light" style="position: relative;bottom: 20px;">
+<!-- Footer --><footer class="page-footer font-small elegant-color lighten-3 py-4 text-light"> 
+<!-- Footer Elements --> 
+
+<div class="container"> 
+
+<div class="row"> 
+
+<div class="col-md-2" style="right:20px;"> <img src="img\PAG PRINCIPAL\sentimar.png" height="50" alt="mdb logo" > 
+</div> 
+
+<div class="col-md-6"> 
+  <ul class="list-unstyled d-flex justify-content-center mb-1 mt-2"> 
+  <li> <h6><a class="nav-link font-small text-muted"href="energia-solar.html">INICIO</a></h6> </li> 
+  <li> <h6><a class="nav-link font-small text-muted" href="nuestro_trabajo_energia_solar.html">NUESTRO TRABAJO</a></h6> </li> 
+  <li class="nav-item"> <h6><a class="nav-link font-small text-muted" href="energia-solar.html">¿QUÉ NECESITAS?</a></h6> </li> 
+  </ul> 
+  </div> 
+  
+  <div class="col-md-2"> 
+  <ul class="list-unstyled d-flex justify-content-center mb-2 mt-2"> 
+  <li> <h6><a class="nav-link font-small text-muted" href="energia-solar.html">¿CÓMO FUNCIONA?</a></h6> </li> 
+  <li class="nav-item"> <h6><a class="nav-link font-small text-muted" href="productos_energia_solar.html">PRODUCTOS</a></h6> </li> 
+  <li class="nav-item"> <h6><a class="nav-link font-small text-muted" href="#contact">CONTACTO</a></h6> </li> 
+  
+  </ul> 
+</div> 
+</div> 
+</div> 
+<!-- Footer Elements -->
+</footer>
+<!-- Footer --> 
+<!-- jQuery --> 
+<script type="text/javascript" src="js/jquery.min.js">
+</script> 
+<!-- Bootstrap tooltips --> 
+<script type="text/javascript" src="js/popper.min.js">
+</script> 
+<!-- Bootstrap core JavaScript --> 
+<script type="text/javascript" src="js/bootstrap.min.js">
+</script> 
+<!-- MDB core JavaScript --> 
+<script type="text/javascript" src="js/mdb.min.js">
+</script> 
+<!-- Your custom scripts (optional) --> 
+<script type="text/javascript" src="js/style.js" >
+</script>
+</body>
+</html>
