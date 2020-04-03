@@ -35,7 +35,7 @@
 <link rel="manifest" href="img/favicon/manifest.json">
 <meta name="msapplication-TileColor" content="#ffffff">
 <meta name="msapplication-TileImage" content="img/favicon/ms-icon-144x144.png">
-<meta name="theme-color" content="#ffffff"> 
+<meta name="theme-color" content="#ffffff">
 <title>SentiMar
 </title> 
 <!-- MDB icon --> 
@@ -153,6 +153,12 @@
     font-weight: bold;
   }
   </style>
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+  <!-- Global site tag (gtag.js) - Google Ads: 657625033 --> <script async src="https://www.googletagmanager.com/gtag/js?id=AW-657625033"></script> <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'AW-657625033'); </script>
+<!-- Event snippet for Sentimar lanzamiento conversion page --> <script> gtag('event', 'conversion', {'send_to': 'AW-657625033/YD1wCOX6zMsBEMmfyrkC'}); </script>
+
+  
+
 
 </head>
 
@@ -267,20 +273,21 @@
 
       <!-- Material input email -->
       <div class="md-form">
-        <i class="fa fa-envelope prefix grey-text"></i>
-        <input type="email" name="email" id="materialFormCardEmailEx" class="form-control">
-        <label for="materialFormCardEmailEx" class="font-weight-light text-white">Email</label>
+        <i class="fas fa-phone-alt prefix grey-text"></i>
+        <input type="text" name="phone" id="defaultRegisterPhonePassword" class="form-control" aria-describedby="defaultRegisterFormPhoneHelpBlock" required>
+        <label for="materialFormCardConfirmEx" class="font-weight-light text-white">Teléfono*</label>
       </div>
 
       <!-- Material input email -->
       <div class="md-form">
-        <i class="fas fa-phone-alt prefix grey-text"></i>
-        <input type="text" name="phone" id="defaultRegisterPhonePassword" class="form-control" aria-describedby="defaultRegisterFormPhoneHelpBlock" required>
-        <label for="materialFormCardConfirmEx" class="font-weight-light text-white">Teléfono*</label>
-        <a style="color: white; padding-left: 133px;font-size: 10px;">*Todos los campos son obligatorios</a>
-      </div>
+        <i class="fa fa-envelope prefix grey-text"></i>
+        <input type="email" name="email" id="materialFormCardEmailEx" class="form-control">
+        <label for="materialFormCardEmailEx" class="font-weight-light text-white">Email</label>
+      </div>      
 
       <div class="text-center py-4 mt-3">
+        <div class="g-recaptcha" data-sitekey="6LdiDuYUAAAAAHR1mHswBBa61GrQ6_Tkd92rGpDZ"></div>
+      <br/>
         <button class="btn btn-cyan" type="submit">Enviar</button>
       </div>
     </form>
@@ -1234,5 +1241,8 @@
 <!-- Your custom scripts (optional) --> 
 <script type="text/javascript" src="js/style.js" >
 </script>
+
+
+
 </body>
 </html>
